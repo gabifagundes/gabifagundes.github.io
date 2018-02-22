@@ -15,11 +15,11 @@
       <div class="row h100">
         <div class="col s12 m3 sizeP h100 lateralBar p0">
           <div class="center">
-            <a href="#gabs" alt="gabs" class="valign-wrapper changeHeight"><i class="material-icons center-align">person</i></a>
-            <a href="#resume"  alt="gabs" class="valign-wrapper changeHeight"><i class="material-icons center-align ">sort_by_alpha</i></a>
-            <a href="#skills" alt="gabs" class="valign-wrapper changeHeight"><i class="material-icons center-align ">star</i></a>
-            <a href="#portfolio" alt="gabs" class="valign-wrapper changeHeight"><i class="material-icons cente  r-align ">wallpaper</i></a>
-            <a href="#contact" alt="gabs" class="valign-wrapper changeHeight"><i class="material-icons center-align ">phone</i></a>
+            <a href="#gabs" alt="gabs" class="valign-wrapper changeHeight tooltipped" data-position="right" data-delay="50" data-tooltip="Sobre"><i class="material-icons center-align">person</i></a>
+            <a href="#resume" alt="Resumo" class="valign-wrapper changeHeight tooltipped" data-position="right" data-delay="50" data-tooltip="Resumo"><i class="material-icons center-align ">sort_by_alpha</i></a>
+            <a href="#skills" alt="skills" class="valign-wrapper changeHeight tooltipped" data-position="right" data-delay="50" data-tooltip="Habilidades"><i class="material-icons center-align ">star</i></a>
+            <a href="#portfolio" alt="portfolio" class="valign-wrapper changeHeight tooltipped" data-position="right" data-delay="50" data-tooltip="Portfolio"><i class="material-icons cente  r-align ">wallpaper</i></a>
+            <a href="#contact" alt="contact" class="valign-wrapper changeHeight tooltipped" data-position="right" data-delay="50" data-tooltip="Contato"><i class="material-icons center-align ">phone</i></a>
           </div>
         </div>        
         <div class="col s12 m9 sizeG workflow pl0">
@@ -42,7 +42,7 @@
               <div id="gabs" class="row section scrollspy">
                 <div class="col s12 m12 l12 pl0 justify">
                   <div class="title col l6 p0">
-                    <h4 class="white-text ml40"> Sobre Mim</h4>
+                    <h4 class="white-text ml40"> Sobre</h4>
                     <div class="divider pink accent-3"></div>
                   </div>
                 </div>
@@ -124,6 +124,7 @@
         $(document).ready(function(){
           
           $('.scrollspy').scrollSpy();
+          $('.tooltipped').tooltip({delay: 50});
           
         });
       
