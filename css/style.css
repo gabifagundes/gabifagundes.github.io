@@ -79,8 +79,8 @@ a:hover,a.active{
 }
 
 .ml40{
-  margin-left: 40px;
-} 
+  padding-left: 40px !important;
+}
 
 .workflow{
   background: url(../img/bg_triangle.png)no-repeat;
@@ -91,6 +91,16 @@ a:hover,a.active{
   background-size: cover;
   position: relative !important;
   float:right !important;
+}
+
+#header{
+  position: fixed; 
+  right: 0;
+}
+
+#middle>div{
+  height: 100vh;
+  transform:translate(0,30%);
 }
 
 .Title{
@@ -111,37 +121,12 @@ a:hover,a.active{
   font-weight: 300;
 }
 
-.text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+.justify{
+  text-align: justify;
 }
 
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
+.btn.cv{
+  text-transform:capitalize ;
+  background-color: #ff1262;
 }
 
-
-
-
-/*staaaaaaaaaaaats here*/
