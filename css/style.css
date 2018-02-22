@@ -1,0 +1,147 @@
+html,body{
+  height:100%;
+  width: 100%;
+  background: linear-gradient(#4a148c, #190335)no-repeat;
+  background-color: #8a0787;
+  background-size: cover;
+  background-blend-mode: hard-light;
+  font-family: 'Raleway', sans-serif;  
+}
+
+.h100{
+  height: 100%;
+  margin: 0 !important;
+}
+
+.sizeP{
+  width: 5% !important;
+}
+
+.sizeG{
+  width: 95% !important;
+}
+
+.lateralBar{
+  border-right: 1px solid #ff1262;
+  background-position: left;
+  min-height: 100% !important;
+  background: #480686;
+  background-size: cover;
+  background-blend-mode: hard-light;
+  position: fixed !important;
+}
+
+.changeHeight{
+  justify-content: center;
+  height: 68px;
+}
+
+.center{
+  transform: translate(0,50%);
+}
+
+a{
+  color: #ff1262;
+}
+
+a:hover,a.active{
+  background-color: #ff1262;
+  margin:0;
+  color:#4a148c;
+}
+
+#nav-mobile a{
+  display: inline-block;
+  color: #fff;
+}
+
+#nav-mobile a:hover,a:active{
+  margin:0;
+  color:#fff;
+  background-color: transparent;
+}
+
+#nav-mobile li {
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.mt40{
+  margin-top:40px;
+}
+
+.p0{
+  padding:0 !important;
+}
+
+.pl0{
+  padding-left: 0 !important;
+}
+
+.ml40{
+  margin-left: 40px;
+} 
+
+.workflow{
+  background: url(../img/bg_triangle.png)no-repeat;
+  background-position: left;
+  min-height: 100% !important;
+  background-color: #601d77;
+  background-blend-mode: overlay;
+  background-size: cover;
+  position: relative !important;
+  float:right !important;
+}
+
+.Title{
+  font-weight: 700;
+  margin-bottom:0;
+}
+
+.white-text{
+  color:#fff;
+}
+
+.pink-text{
+  color:#ff1262;
+}
+
+.subtitle{
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+
+/*staaaaaaaaaaaats here*/
