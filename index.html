@@ -13,7 +13,7 @@
 
     <body>
       <div class="row h100">
-        <div class="col s12 m3 sizeP h100 lateralBar p0">
+        <div class="col s12 m12 sizeP h100 lateralBar hide-on-med-and-down p0">
           <div class="center">
             <a href="#gabs" alt="gabs" class="valign-wrapper changeHeight tooltipped" data-position="right" data-delay="50" data-tooltip="Sobre"><i class="material-icons center-align">person</i></a>
             <a href="#resume" alt="Resumo" class="valign-wrapper changeHeight tooltipped" data-position="right" data-delay="50" data-tooltip="Resumo"><i class="material-icons center-align ">sort_by_alpha</i></a>
@@ -22,8 +22,8 @@
             <a href="#contact" alt="contact" class="valign-wrapper changeHeight tooltipped" data-position="right" data-delay="50" data-tooltip="Contato"><i class="material-icons center-align ">phone</i></a>
           </div>
         </div>        
-        <div class="col s12 m9 sizeG workflow pl0">
-            <div id="header" class="col s12 m6 l6 right">
+        <div class="col s12 m12 sizeG workflow pl0">
+            <div id="header" class="col s12 m6 l6 right  hide-on-med-and-down">
               <div class="row">
                 <ul id="nav-mobile" class=" right-align">
                   <li><a href="https://www.facebook.com/gabi.fagundes.7"><i class="fab fa-facebook-square"></i></a></li>
@@ -38,10 +38,10 @@
                 </section>
               </div>
             </div>
-            <section id="middle" class="col s12 m6 l12 p0">
+            <section id="middle" class="col s12 m12 l12 p0">
               <div id="gabs" class="row section scrollspy">
                 <div class="col s12 m12 l12 pl0 justify">
-                  <div class="title col l6 p0">
+                  <div class="title col s12 m12 l6 p0">
                     <h4 class="white-text ml40"> Sobre</h4>
                     <div class="divider pink accent-3"></div>
                   </div>
@@ -123,6 +123,23 @@
     <script>
         $(document).ready(function(){
           
+          var windowSize = $(window).width();
+          
+          window.onresize=function() {
+              getDimensions();
+          }
+          
+          function getDimensions() {
+            var windowSize = window.innerWidth;
+            if (windowSize < 992){
+              $(".lateralBar").removeClass('sizeP');
+              $(".workflow").removeClass('sizeG');
+            }else{
+              $(".lateralBar").addClass('sizeP');
+              $(".workflow").addClass('sizeG');
+            }
+          }
+
           $('.scrollspy').scrollSpy();
           $('.tooltipped').tooltip({delay: 50});
           
